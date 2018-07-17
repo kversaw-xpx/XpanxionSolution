@@ -1,0 +1,4 @@
+Managers handle the sequence of business logic. Managers make decisions based on the information they receive and business rules.
+- Managers can access Engines, ResourceAccessors, and Shared Projects
+- Managers can only be accessed by Clients. Managers MAY NOT access each other. If there is the need for a Manager to access another Manager
+then a queuing system needs to be set up.

@@ -1,7 +1,5 @@
 ﻿using Unity;
 using Unity.RegistrationByConvention;
-
-
 namespace Xpanxion.IoC
 {
    public class DependencyInjection

@@ -2,7 +2,7 @@
 
 namespace Xpanxion.Contracts
 {
-    public interface IDataAccess<t>
+    public interface IDataAccess<t> 
     {
          IEnumerable<t> GetData();
          void AddOneItem(t dataItem);       

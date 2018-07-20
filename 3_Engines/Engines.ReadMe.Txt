@@ -1,5 +1,5 @@
 Engines are functions that make no decisions, and carry no state. They take in parameters and return values. An engine should be passed in everything
 it needs to perform the calculation it is being asked to perform.
-- Engines can be accessed from Managers, other engines, and clients. 
-- Engines can only access other Engines, ResourceAccessors, and Shared Projects. They CAN NOT access Managers.
+- Engines can be accessed from Managers, and clients. 
+- Engines can only access ResourceAccessors and Shared Projects. They CAN NOT access Managers or other Engines.
  

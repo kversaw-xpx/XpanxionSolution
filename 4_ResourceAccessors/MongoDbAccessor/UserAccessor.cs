@@ -3,7 +3,7 @@ using System.Linq;
 using Xpanxion.DataContracts;
 using Xpanxion.Contracts;
 
-namespace DatabaseAccessor
+namespace Xpanxion.DatabaseAccessor
 {
    public class UserAccessor : DataAccess<User>, IUserAccessor
     {       

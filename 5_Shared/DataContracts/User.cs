@@ -2,7 +2,7 @@
 
 namespace Xpanxion.DataContracts
 {
-    public class User :BaseClass
+    public class User : BaseClass
     {             
         public string FirstName { get; set; }
         public string LastName { get; set; }

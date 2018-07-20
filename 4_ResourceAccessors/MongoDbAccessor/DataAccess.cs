@@ -5,7 +5,8 @@ using System.Configuration;
 using System.Linq;
 using Xpanxion.Contracts;
 using Xpanxion.DataContracts;
-namespace DatabaseAccessor
+
+namespace Xpanxion.DatabaseAccessor
 {
     public class DataAccess<t> : IDataAccess<t> where t:BaseClass
     {

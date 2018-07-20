@@ -14,7 +14,7 @@ namespace Xpanxion.Engines
         {
             bool returnValue = false;
 
-            var credQuery = user.Credentials.Where(x => x.CredentialId == credential.CredentialId);
+            var credQuery = user.Credentials.Where(x => x.Id == credential.Id);
 
             returnValue = credQuery.Count() > 0 ? true : false;
             return returnValue;

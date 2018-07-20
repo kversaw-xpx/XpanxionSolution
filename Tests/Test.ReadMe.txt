@@ -1,0 +1,1 @@
+Tests projects are for running system-wide unit tests. The individual clients should have their own test suites that test the individual things that they do. Examples could be routing tests, controller tests, and javascript framework tests like Jasmine.

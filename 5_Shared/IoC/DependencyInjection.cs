@@ -15,7 +15,6 @@ namespace Xpanxion.IoC
                 RegisterDependencies();
             }
 
-
             return container.Resolve<t>();
         }
 

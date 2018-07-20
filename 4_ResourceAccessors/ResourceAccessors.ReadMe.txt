@@ -1,3 +1,4 @@
-ResourceAccessors are used to interface with resources external to our system. A few examples are Databases, Email Servers, Cloud Queues, and external RESTful services.
+ResourceAccessors are used to interface with resources external to the system.
 - ResourceAccessors can be accessed only by Engines and Managers. 
-- ResourceAccessors can only have a dependancy on Shared Projects.
+- ResourceAccessors can only have a dependency on Shared Projects.
+- Examples: Databases, Email Servers, Cloud Queues, and external RESTful services.

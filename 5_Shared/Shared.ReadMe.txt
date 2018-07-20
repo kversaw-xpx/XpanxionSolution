@@ -1,0 +1,3 @@
+Shared Projects include anything that is needed at any level of the system.
+- Shared Projects can only have a dependency on other Shared Projects.
+- Examples: Data Contracts, Interface Definitions. and Inversion of Control Systems 

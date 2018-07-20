@@ -1,0 +1,6 @@
+Client Layer
+ - Can be a user or another system
+ - Can be a variety of client application technologies including desktop apps, rich web clients, mobile apps, and queue systems.
+ - Can only access Managers, Engines, and Shared Projects.
+ - Clients can NEVER access Resource Accessors or other clients directly
+ - Examples: ASP.NET MVC, Xamarin, JavaScript SPA Frameworks, etc

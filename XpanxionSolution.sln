@@ -28,11 +28,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Shared", "5.Shared", "{2C
 		5_Shared\Shared.ReadMe.txt = 5_Shared\Shared.ReadMe.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{A3314F1D-7B6C-4486-9A07-E0EDACA64213}"
-	ProjectSection(SolutionItems) = preProject
-		Database\Database.ReadMe.txt = Database\Database.ReadMe.txt
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5EE6C192-139B-4467-8E46-3D132E3AFF1C}"
 	ProjectSection(SolutionItems) = preProject
 		Tests\Test.ReadMe.txt = Tests\Test.ReadMe.txt
@@ -58,7 +53,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbAccessor_Test", "Mon
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoC", "IoC", "{AD483D90-2453-46AD-8611-BEA9E7C62950}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{4A8F275C-5B64-4FA0-AE5F-76220DAB07C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "5_Shared\IoC\DependencyInjection.csproj", "{4A8F275C-5B64-4FA0-AE5F-76220DAB07C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

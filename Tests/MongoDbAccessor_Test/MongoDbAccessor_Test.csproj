@@ -56,19 +56,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\4_ResourceAccessors\MongoDbAccessor\MongoDbAccessor.csproj">
+    <ProjectReference Include="..\..\4_ResourceAccessors\MongoDbAccessor\MongoDbAccessor.csproj">
       <Project>{af45112c-fb27-4a88-88dd-990221105c15}</Project>
       <Name>MongoDbAccessor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\5_Shared\Contracts\Contracts.csproj">
+    <ProjectReference Include="..\..\5_Shared\Contracts\Contracts.csproj">
       <Project>{58b7e643-5883-4b57-8d97-e336f18cc7e0}</Project>
       <Name>Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\5_Shared\DataContracts\DataContracts.csproj">
+    <ProjectReference Include="..\..\5_Shared\DataContracts\DataContracts.csproj">
       <Project>{bac7d124-dd7b-401d-9bbd-60952f58b1fb}</Project>
       <Name>DataContracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DependencyInjection\DependencyInjection.csproj">
+    <ProjectReference Include="..\..\5_Shared\IoC\DependencyInjection.csproj">
       <Project>{4a8f275c-5b64-4fa0-ae5f-76220dab07c5}</Project>
       <Name>DependencyInjection</Name>
     </ProjectReference>

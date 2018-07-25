@@ -3,6 +3,7 @@ using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Threading.Tasks;
 using Xpanxion.Contracts;
 using Xpanxion.DataContracts;
 
@@ -25,12 +26,12 @@ namespace Xpanxion.DatabaseAccessor
 
         }    
 
-        public IEnumerable<t> GetData()
+        public async Task<IEnumerable<t>> GetData()
         {
-            return _db.GetCollection<t>(_collectionName).Find(f=>true).ToEnumerable<t>();
+            return await Task.Run(() => _db.GetCollection<t>(_collectionName).Find(f=>true).ToEnumerable<t>());
         }
 
-        public void AddOneItem(t dataItem)
+        public async void AddOneItem(t dataItem)
         {
             if(dataItem.Id==null)
             {
@@ -38,7 +39,7 @@ namespace Xpanxion.DatabaseAccessor
                 dataItem.Id = ObjectId.GenerateNewId().ToString();
             }
 
-            _db.GetCollection<t>(_collectionName).InsertOne(dataItem);
+           await Task.Run(()=> _db.GetCollection<t>(_collectionName).InsertOne(dataItem));
         }
     }
 }

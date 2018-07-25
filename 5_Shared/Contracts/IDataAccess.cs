@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Xpanxion.Contracts
 {
     public interface IDataAccess<t> 
     {
-         IEnumerable<t> GetData();
+         Task<IEnumerable<t>> GetData();
          void AddOneItem(t dataItem);       
     }
 }

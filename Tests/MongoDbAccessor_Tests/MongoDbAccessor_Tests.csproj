@@ -60,10 +60,30 @@
     <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Configuration.ConfigurationManager.4.5.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Permissions.4.5.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,20 +95,20 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\4_ResourceAccessors\MongoDbAccessor\MongoDbAccessor.csproj">
-      <Project>{af45112c-fb27-4a88-88dd-990221105c15}</Project>
+      <Project>{8a12c1d7-69dd-4fed-b36d-9726dea3c6f9}</Project>
       <Name>MongoDbAccessor</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\5_Shared\Contracts\Contracts.csproj">
-      <Project>{58b7e643-5883-4b57-8d97-e336f18cc7e0}</Project>
+      <Project>{371ebc05-e01f-45d2-a6fc-65de4d1e045f}</Project>
       <Name>Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\5_Shared\DataContracts\DataContracts.csproj">
-      <Project>{bac7d124-dd7b-401d-9bbd-60952f58b1fb}</Project>
+      <Project>{5c62c797-b3f9-437f-81bc-6136471b181a}</Project>
       <Name>DataContracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\5_Shared\IoC\DependencyInjection.csproj">
-      <Project>{4a8f275c-5b64-4fa0-ae5f-76220dab07c5}</Project>
-      <Name>DependencyInjection</Name>
+    <ProjectReference Include="..\..\5_Shared\IoC\IoC.csproj">
+      <Project>{ae753958-f45b-43f4-80d2-9d19ade56c86}</Project>
+      <Name>IoC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

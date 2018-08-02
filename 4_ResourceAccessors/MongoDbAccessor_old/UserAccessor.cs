@@ -3,16 +3,12 @@ using System.Linq;
 using Xpanxion.DataContracts;
 using Xpanxion.Contracts;
 using System.Threading.Tasks;
-
+using System;
 
 namespace Xpanxion.DatabaseAccessor
 {
     public class UserAccessor : DataAccess<User>, IUserAccessor
     {
-        public UserAccessor()
-        {
-
-        }
 
         public async Task<User> GetUserByEmailAddress(string emailAddress)
         {
